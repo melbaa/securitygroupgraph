@@ -1,10 +1,3 @@
-
-/*
-    TODO
-    sidebar with dropdown for layouts cose, circle, concentric, bfs,
-*/
-
-
 var CLICKED = 'clicked';
 var LAYOUTCHOICE = 'layoutchoice';
 
