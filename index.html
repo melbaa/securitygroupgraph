@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+
+    <title>Security Groups</title>
+    <script src='cytoscape.js'></script>
+    <script src='securitygroups.js'></script>
+
+    <style>
+        #cy {
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+        }
+
+        #overlay {
+            position: absolute;
+            z-index: 999;
+            opacity: 0.5;
+        }
+
+        #sidebar {
+            position: absolute;
+            opacity: 0.5;
+            top: 0px;
+            right: 0px;
+            height: 100%;
+            width: 20%;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 id='overlay'>magic overlay text</h1>
+    <div id='sidebar'>
+        <div id='selectedgroups'>click a sg</div>
+        <br>
+        <div>
+            pick a layout
+            <select id='layoutchoice'>
+                <option value='breadthfirst'>breadthfirst</option>
+                <option value='circle'>circle</option>
+                <option value='concentric' selected>concentric</option>
+                <option value='cose'>cose</option>
+                <option value='grid'>grid</option>
+            </select>
+        </div>
+    </div>
+    <div id='cy'></div>
+    <script src='mel.js'></script>
+</body>
+</html>
+
